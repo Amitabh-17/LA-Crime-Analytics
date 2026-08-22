@@ -3,7 +3,7 @@ data/raw/*.csv
 data/processed/*.csv
 
 # Trained models (regenerate via `python main.py`)
-models/*.pkl
+#models/*.pkl
 
 # Python
 __pycache__/
