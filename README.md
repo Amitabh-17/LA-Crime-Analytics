@@ -2,7 +2,7 @@
 
 An end-to-end data analytics project on 740K+ LAPD crime incident records (2020–present), built to surface geographic and temporal crime patterns and to predict likely crime type from situational features. Includes a full reproducible pipeline (cleaning → feature engineering → modeling) and an interactive Streamlit dashboard.
 
-**Live dashboard:** _add your deployed Streamlit Community Cloud link here after deploying_
+**Live dashboard:** [https://la-crime-analytics.streamlit.app/]
 
 ---
 
