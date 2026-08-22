@@ -1,0 +1,23 @@
+# Data (raw data is too large for git; re-download from Kaggle — see README)
+data/raw/*.csv
+data/processed/*.csv
+
+# Trained models (regenerate via `python main.py`)
+models/*.pkl
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# OS/editor
+.DS_Store
+.vscode/
+*.swp
