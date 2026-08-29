@@ -300,14 +300,14 @@ with tab_geo:
         map_df = map_df.sample(20000, random_state=42)
 
     if len(map_df):
-        fig = px.density_mapbox(
-            map_df, lat="LAT", lon="LON", radius=4, zoom=9,
-            center=dict(lat=34.05, lon=-118.25),
-            mapbox_style="carto-darkmatter",
-            color_continuous_scale=["#0B1220", TEAL, AMBER, RED],
-        )
-        fig.update_layout(**PLOTLY_TEMPLATE["layout"], height=560, coloraxis_showscale=False)
-        st.plotly_chart(fig, use_container_width=True)
+    fig = px.density_map(
+        map_df, lat="LAT", lon="LON", radius=4, zoom=9,
+        center=dict(lat=34.05, lon=-118.25),
+        map_style="open-street-map",
+        color_continuous_scale=["#0B1220", TEAL, AMBER, RED],
+    )
+    fig.update_layout(**PLOTLY_TEMPLATE["layout"], height=560, coloraxis_showscale=False)
+    st.plotly_chart(fig, use_container_width=True)
     else:
         st.info("No geolocated incidents match the current filters.")
 
